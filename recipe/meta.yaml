@@ -1,5 +1,5 @@
 {% set name = "kwimage" %}
-{% set version = "0.10.2" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kwimage-{{ version }}.tar.gz
-  sha256: 97bf88292e8e50350f576b0e8cd49155a1ab190b99c6e7e11ff946fbd4bf3d65
+  sha256: 329a36fa5883c0dc85b2b777621d372cc24f738eec961df45c78ec187ca1f010
 
 build:
   noarch: python
