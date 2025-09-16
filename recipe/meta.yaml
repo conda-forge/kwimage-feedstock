@@ -1,5 +1,5 @@
 {% set name = "kwimage" %}
-{% set version = "0.11.2" %}
+{% set version = "0.11.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kwimage-{{ version }}.tar.gz
-  sha256: 012626925e49613d6f6d3af484117cf6559413ee1adf93075c2f864f162ac15f
+  sha256: c4dd5e898bc45f76a389449655e4c60c686ed9013f25e2158816ea9d2adbb4a5
 
 build:
   noarch: python
   entry_points:
     - kwimage = kwimage.cli.__main__:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
